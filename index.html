@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <title>RPS</title>
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body>
+    <h1>Rock Paper Scissors ✊✋✌️</h1>
+
+    <div class="game-board">
+      <div class="you">
+        <img id="playerHand" class="hand" src="rock.jpeg" />
+        <p>You</p>
+      </div>
+      <div class="com">
+        <img id="computerHand" class="hand" src="rock.jpeg" />
+        <p>Computer</p>
+      </div>
+    </div>
+
+    <button onclick="play('rock')">✊ rock</button>
+    <button onclick="play('paper')">✋ paper</button>
+    <button onclick="play('scissors')">✌️ scissors</button>
+
+    <!-- sounds -->
+    <audio id="audio1" src="./sounds/count.mp3"></audio>
+    <audio id="audio2" src="./sounds/count.mp3"></audio>
+    <audio id="audio3" src="./sounds/count.mp3"></audio>
+    <audio id="audioWin" src="./sounds/win.mp3"></audio>
+    <audio id="audioLose" src="./sounds/lose.mp3"></audio>
+    <audio id="audioTie" src="./sounds/tie.mp3"></audio>
+
+    <div id="result"></div>
+    <button id="reset" onclick="resetGame()">🔄️</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>

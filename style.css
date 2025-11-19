@@ -1,0 +1,64 @@
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.grayscale-effect {
+  filter: grayscale(80%);
+}
+
+.game-board {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;  
+
+}
+
+.hand {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+  margin: 20px;
+}
+
+.bounce {
+  animation: bounce 0.4s infinite alternate;
+}
+
+@keyframes bounce {
+  from { transform: translateY(0); }
+  to   { transform: translateY(-20px); }
+}
+
+button {
+  margin: 10px;
+  padding: 12px 18px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 16px;
+  border: none;
+  background-color: rgba(18, 0, 49, 0.8);
+  color: white;
+  transition: width 0.5s ease-in-out;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    transform: scale(1.1);
+    background: #059705;
+    
+}
+
+#reset {
+  background: none;
+  box-shadow: 0 0 10px;
+}
+
+#result {
+  font-size: 28px;
+  margin-top: 20px;
+  font-weight: bold;
+}
